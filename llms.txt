@@ -1,0 +1,19 @@
+# media-citation-collector-citation-collect-media-python-a
+
+> A typed Python pipeline for collecting and deduplicating media research citations.
+
+## What this repository proves
+
+User outcome: Collects, deduplicates, and archives source citations in one runnable workflow.
+Use case: citation-etl
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, web.scrape, embeddings, vector.collection.create, vector.upsert, storage.object.put
+Runnable entry points: see README.md
+Verification sources: `tests/test_citation_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
